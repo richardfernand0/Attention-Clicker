@@ -1,3 +1,65 @@
-* {
-    background: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #f1f7ee;
+
+}
+
+.main-div  {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+
+
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-section {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.click-me {
+    height: 150px;
+    width: 150px;
+    background: #ff785a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.click-me:hover {
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+
+.bottom-section {
+    text-align: center;
 }
