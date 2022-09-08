@@ -1,5 +1,5 @@
 let yourScore = 0;
-let highScore = 0;
+let highScore = [];
 let scoreHistory = 0;
 let timer = new Date();
 let createdTime = 0;
@@ -45,6 +45,32 @@ function ClickFunction() {
 
 
     document.getElementById('your-score-time').innerHTML = seconds + "s";
+
+    highScore.push(seconds);
+
+    fastestTime = Math.min(...highScore);
+    document.getElementById('high-score-item').innerHTML = fastestTime + "s";
+
+
+    if (seconds == fastestTime) {
+
+        document.getElementById('message-section').innerHTML = "Congratulation you got High Score!";
+
+        setTimeout(function(){
+
+            document.getElementById('message-section').innerHTML = "";
+        }, 1000);
+
+
+    };
+
+
+    // Loop HighScore
+    // for (i=0; i<highScore.length; i++) {
+    //     console.log(highScore[i]);
+    // }
+
+
 
     // Hide Click Me
 document.getElementById('click-btn').style.display = "none";
